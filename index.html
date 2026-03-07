@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Handyman Services | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="header"></div>
+
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('header').innerHTML = html;
+    });
+</script>
+
+  <main>
+    <section class="landing-hero">
+      <div class="wrap hero-container">
+        <div class="landing-media">
+<img id="service-image" src="images/img_handyman.jpg" alt="Verified Handyman Services" loading="eager" />        </div>
+
+        <div class="landing-services">
+          <h2 class="section-title">Popular Services</h2>
+          <div class="services-list">
+            <div class="hover" onmouseenter="showImage('img_plumber.jpg', this)" onclick="window.location.href='service.html#plumbing';">
+              <h3>Plumbing</h3>
+              <p>Expert solutions for all your plumbing needs!</p>
+            </div>
+            <div class="hover" onmouseenter="showImage('img_carpentry.jpg', this)" onclick="window.location.href='service.html#carpentry';">
+              <h3>Carpentry</h3>
+              <p>Skilled craftsmanship for any carpentry project!</p>
+            </div>
+            <div class="hover" onmouseenter="showImage('img_electric.jpg', this)" onclick="window.location.href='service.html#electrical';">
+              <h3>Electrical Work</h3>
+              <p>Reliable electrical services at your fingertips!</p>
+            </div>
+            <div class="hover" onmouseenter="showImage('img_cleaning.jpg', this)" onclick="window.location.href='service.html#cleaning';">
+              <h3>Cleaning</h3>
+              <p>Sparkling clean, every time. We’ve got you covered!</p>
+            </div>
+            <div class="hover" onmouseenter="showImage('img_repair.jpg', this)" onclick="window.location.href='service.html#automation';">
+              <h3>Automation & Smart Home</h3>
+              <p>Upgrade your home effortlessly!</p>
+            </div>
+            <div class="hover" onmouseenter="showImage('img_handyman.jpg', this)" onclick="window.location.href='service.html#general';">
+              <h3>General Handyman</h3>
+              <p>Your go-to for odd jobs or home improvements!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="one-stop-solutions">
+        <div class="wrap text-center">
+            <h2>One Stop, All Solutions</h2>
+            <p>The ultimate platform for all your home service needs.</p>
+            <div class="one-stop-actions">
+          <a class="btn-primary" href="https://app.handy.com/post_job.php">Post a Job</a>
+          <a class="btn-ghost" href="service.html">Browse Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="trust-strip" aria-label="Handyman Approved Pros">
+      <div class="trust-inner">
+        <div class="trust-title">
+          <span class="trust-badge" aria-hidden="true">🔒</span>
+          <h2>Handyman-Approved Pros</h2>
+        </div>
+        <p class="trust-sub">
+          Services requested through Handyman are fulfilled by skilled providers rated by customers like you.
+          <a href="faq.html">Learn more</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Disclaimer (replaces Partners) -->
+    <section class="app-disclaimer">
+      <div class="wrap">
+        <h2 class="big-title text-center">Important: Actions happen in the App</h2>
+        <div class="cards-2">
+          <div class="info-card">
+            <h3>Web Features</h3>
+            <ul>
+              <li>Browse services & categories</li>
+              <li>View service info</li>
+              <li>Read FAQs</li>
+            </ul>
+          </div>
+          <div class="info-card featured">
+            <h3>App Features</h3>
+            <ul>
+              <li>Post a job & pay</li>
+              <li>Live worker tracking</li>
+              <li>In-app messaging</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <div class="disclaimer-cta">
+          <a class="btn-primary" href="https://app.handy.com/post_job.php">Continue in App</a>
+          <a class="btn-link" href="service.html">Browse services</a>
+        </div>
+      
+    </section>
+
+    <!-- Guarantee split -->
+    <section class="guarantee-split" aria-label="Guarantee">
+      <div class="guarantee-inner">
+        <div class="guarantee-left">
+          <div class="guarantee-badge">HANDYMAN</div>
+          <h2>Your Happiness, Guaranteed</h2>
+          <p>
+            If you’re not happy, we’ll work to make it right. Our support team is here to help.
+            This applies to services requested through the Handyman app.
+          </p>
+          <a href="faq.html" class="btn-link-light">Learn more</a>
+        </div>
+
+        <div class="guarantee-right">
+          <!-- Replace with your own image -->
+          <img src="images/guarantee-hero.jpg" alt="Home service experience">
+        </div>
+      </div>
+    </section>
+
+    <!-- Get the app -->
+    <section class="get-app" aria-label="Get the Handyman App">
+      <div class="get-app-inner">
+        <div class="get-app-text">
+          <h2>Get the Handyman App</h2>
+          <p>
+            Post and manage requests, get updates, and see real-time status —
+            all inside the Handyman app.
+          </p>
+
+         <div class="store-buttons">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+        </div>
+        </div>
+
+        <div class="get-app-phone">
+          <!-- Replace with your phone mock image -->
+          <img src="images/app-phone-mock.png" alt="Handyman app preview">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+<script>
+  fetch('footer.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('footer').innerHTML = html;
+    });
+</script>
+
+  <script>
+let activeService = document.querySelector('.landing-services .hover.active');
+
+    function showImage(imagePath, altText, element) {
+      const img = document.getElementById('service-image');
+      img.src = 'images/' + imagePath;
+      img.alt = altText; // Dynamically update alt for accessibility
+
+      if (activeService) activeService.classList.remove('active');
+      element.classList.add('active');
+      activeService = element;
+    }
+
+    // Fixed load listener to be more accurate
+    window.addEventListener('load', () => {
+      const firstService = document.querySelector('.services-list div');
+      if (firstService) {
+          // Trigger the initial state based on the first item in the list
+          showImage('Img_handyman.jpg', 'Professional Plumbing Services', firstService);
+      }
+    });
+  </script>
+
+</body>
+</html>

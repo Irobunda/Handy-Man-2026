@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Handy Nigeria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="index.html" class="home-link">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="service.html" class="active">Services</a>
+            <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="https://app.handy.com/login.php">Log in</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-hero">
+        <div class="envelope text-center">
+            <h1>Reliable services for your home</h1>
+            <p>From inverter setups to emergency plumbing, we've got you covered.</p>
+        </div>
+    </section>
+
+    <main class="service-main">
+        <div class="envelope service-layout">
+            
+            <aside class="category-sidebar">
+                <h3>All Categories</h3>
+                <ul>
+                    <li><a href="#plumbing" onclick="scrollToSection('plumbing')">Plumbing</a></li>
+                    <li><a href="#electrical" onclick="scrollToSection('electrical')">Electrical & Power</a></li>
+                    <li><a href="#cleaning" onclick="scrollToSection('cleaning')">Cleaning</a></li>
+                    <li><a href="#automation" onclick="scrollToSection('automation')">Security & Smart Home</a></li>
+                    <li><a href="#carpentry" onclick="scrollToSection('carpentry')">Carpentry</a></li>
+                    <li><a href="#general" onclick="scrollToSection('general')">General Handyman Services</a></li>
+                </ul>
+            </aside>
+
+            <div class="service-content">
+                <section id="plumbing" class="service-group">
+                    <div class="group-header">
+                        <h2>Plumbing Services</h2>
+                        <img src="images/img_plumber.jpg" alt="Plumbing">
+                    </div>
+                    <div class="grid-3">
+                        <a href="services/Plumbing_Services/pipe_installation.html" class="service-item-card">Pipe & Tap Installation</a>
+                        <a href="services/Plumbing_Services/leak_detection.html" class="service-item-card">Leak Detection & Repair</a>
+                        <a href="services/Plumbing_Services/drain_unblocking.html" class="service-item-card">Drain Unblocking</a>
+                        <a href="services/Plumbing_Services/water_heater.html" class="service-item-card">Water Heater Service</a>
+                        <a href="services/Plumbing_Services/toilet-sink_repair.html" class="service-item-card">Toilet & Sink Repair</a>
+                    </div>
+                </section>
+
+                <section id="electrical" class="service-group">
+                    <div class="group-header">
+                        <h2>Electrical & Power</h2>
+                        <img src="images/img_electric.jpg" alt="Electrical">
+                    </div>
+                    <div class="grid-3">
+                        <a href="services/Electrical_Services/inverter_battery.html" class="service-item-card">Inverter & Battery Systems</a>
+                        <a href="services/Electrical_Services/generator_installation.html" class="service-item-card">Generator Maintenance</a>
+                        <a href="services/Electrical_Services/Acandgas.html" class="service-item-card">AC Installation & Gas Refill</a>
+                        <a href="services/Electrical_Services/lighting_installation.html" class="service-item-card">Lighting & Wiring Repairs</a>
+                        <a href="services/Electrical_Services/surge_protection.html" class="service-item-card">Surge Protection</a>
+                    </div>
+                </section>
+
+                <section id="automation" class="service-group">
+                    <div class="group-header">
+                        <h2>Security & Smart Home</h2>
+                        <img src="images/img_automation.jpg" alt="Security">
+                    </div>
+                    <div class="grid-3">
+                        <a href="services/Smart_Home/Camera_installation.html" class="service-item-card">CCTV Camera Installation</a>
+                        <a href="services/Smart_Home/Video_doorbell.html" class="service-item-card">Video Doorbell Setup</a>
+                        <a href="services/Smart_Home/security_systems.html" class="service-item-card">Electric Fence Maintenance</a>
+                        <a href="services/Smart_Home/smartdevice_installation.html" class="service-item-card">Smart Lock Installation</a>
+                        <a href="services/Smart_Home/Wifi_router_setup.html" class="service-item-card">WiFi/Router Optimization</a>
+                    </div>
+                </section>
+
+                <section id="cleaning" class="service-group">
+                    <div class="group-header">
+                        <h2>Cleaning Services</h2>
+                        <img src="images/img_cleaning.jpg" alt="Cleaning">
+                    </div>
+                    <div class="grid-3">
+                        <a href="services/Cleaning_Services/Residential_Cleaning.html" class="service-item-card">Standard Home Cleaning</a>
+                        <a href="services/Cleaning_Services/Office_Commercial_Cleaning.html" class="service-item-card">Office Cleaning</a>
+                        <a href="services/Cleaning_Services/post_construction.html" class="service-item-card">Post-Construction Cleaning</a>
+                    </div>
+                </section>
+
+                <section id="carpentry" class="service-group">
+                    <div class="group-header">
+                        <h2>Carpentry & Woodwork</h2>
+                        <img src="images/img_carpentry.jpg" alt="Carpentry">
+                    </div>
+                    <div class="grid-3">
+                        <a href="services/Carpentry_Services/door_frame_repairs.html" class="service-item-card">Door & Lock Repairs</a>
+                        <a href="services/carpentry_services/custom_installations.html" class="service-item-card">Kitchen Cabinet Installation</a>
+                        <a href="services/carpentry_services/furniture_repair.html" class="service-item-card">Wardrobe & Drawer Repair</a>
+                        <a href="#" class="service-item-card">Wooden Flooring Maintenance</a>
+                        <a href="services/carpentry_services/roof_framework.html" class="service-item-card">Roof Framework Repairs</a>
+                    </div>
+                </section>
+
+                <section id="general" class="service-group">
+                    <div class="group-header">
+                        <h2>General Handyman Services</h2>
+                        <img src="images/img_handyman.jpg" alt="Handyman">
+                    </div>
+                    <div class="grid-3">
+                        <a href="services/General_Handyman_Services/tvwall_mounting.html" class="service-item-card">TV Wall Mounting</a>
+                        <a href="services/General_Handyman_Services/furniture_assembly.html" class="service-item-card">Furniture Assembly</a>
+                        <a href="services/General_Handyman_Services/Curtain_blind.html" class="service-item-card">Curtain & Blind Installation</a>
+                        <a href="services/General_Handyman_Services/painting.html" class="service-item-card">Wall Painting & Touch-ups</a>
+                        <a href="services/General_Handyman_Services/masonry_patchwork.html" class="service-item-card">Minor Masonry/Patchwork</a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const offset = 100; 
+            const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
