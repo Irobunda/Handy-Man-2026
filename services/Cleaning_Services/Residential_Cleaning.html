@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residential Cleaning | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+<section class="service-cleaning-banner bg-white">
+    <div class="wrap hero-split">
+        <div class="hero-text-content">
+            <h1>Residential Home Cleaning</h1>
+            <div class="rating-strip">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">Over 1,200 Homes Cleaned</span>
+            </div>
+            <p class="lead-text">
+                From routine weekly tidying to intensive seasonal deep cleans, our verified pros handle it all. We bring the supplies, the expertise, and the "Handy" happiness guarantee to every room in your house.
+            </p>
+            <ul class="benefit-list">
+                <li>✓ <strong>Flexible Scope</strong>: Choose between Standard or Deep cleaning.</li>
+                <li>✓ <strong>Upholstery Care</strong>: Add sofa or carpet washing in one click.</li>
+                <li>✓ <strong>Verified Pros</strong>: Background-checked for your safety.</li>
+                <li>✓ <strong>Upfront Rates</strong>: No hidden fees for "extra dirty" rooms.</li>
+            </ul>
+        </div>
+
+        <aside class="quote-form-card shadow-lg">
+            <div class="form-header">
+                <h2>Customize Your Clean</h2>
+                <p>Select your home size and desired service level.</p>
+            </div>
+            
+            <form id="handyResidentialForm">
+                <div class="form-group">
+                    <label>Cleaning Level</label>
+                    <select id="cleanScope" required onchange="toggleSpecificAreas()">
+                        <option value="standard" selected>Standard Clean (Tidying & Mopping)</option>
+                        <option value="deep">Deep Clean (Intensive Scrubbing)</option>
+                        <option value="specific">Specific Areas Only</option>
+                    </select>
+                </div>
+
+                <div id="specificAreaChecklist" style="display:none;" class="p-3 bg-light rounded mb-3 border">
+                    <label class="fw-bold small mb-2 text-success">Select areas:</label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="area" value="kitchen"> Kitchen</label>
+                        <label><input type="checkbox" name="area" value="bathroom"> Bathrooms</label>
+                        <label><input type="checkbox" name="area" value="patio"> Patio/Outdoor</label>
+                        <label><input type="checkbox" name="area" value="trash"> Trash Removal</label>
+                    </div>
+                </div>
+
+                <div class="extras-section p-3 mb-3 border rounded bg-white">
+                    <label class="fw-bold text-dark mb-2 small">Extras </label>
+                    <div class="extras-grid">
+                        <label><input type="checkbox" name="extra" value="fridge"> Inside Fridge</label>
+                        <label><input type="checkbox" name="extra" value="oven"> Inside Oven</label>
+                        <label><input type="checkbox" name="extra" value="laundry"> Laundry (Wash/Dry)</label>
+                        <label class="text-primary fw-bold"><input type="checkbox" name="extra" value="sofa"> Sofa Wash</label>
+                        <label class="text-primary fw-bold"><input type="checkbox" name="extra" value="carpet"> Carpet/Rug Wash</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Property Size</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="rooms" value="studio" checked> 1 Bed</label>
+                        <label><input type="radio" name="rooms" value="medium"> 2-3 Beds</label>
+                        <label><input type="radio" name="rooms" value="large"> 4+ Beds</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Street Address & Landmark</label>
+                    <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+                    <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+                </div>
+
+        <button type="submit" class="btn-primary-block">See Estimated Price</button>
+    </form>
+    
+    <div id="priceOutput"></div>
+    
+    <p class="app-disclaimer-text">
+        <strong>Note:</strong> Estimates help you plan. To officially book and secure your pro, 
+        <strong>please finish the booking in the Handy App</strong>.
+    </p>
+        </aside>
+        </div>
+    </section>
+
+    <section class="trust-features">
+        <div class="wrap">
+            <h2 class="section-title">Why The Community Trusts Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h4>Experienced</h4>
+                    <p>Plumbers on our platform have years of experience fixing common and uncommon plumbing issues.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Reliable</h4>
+                    <p>There are few things worse than waiting. We match you with pros who show up on time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Flexible</h4>
+                    <p>Our team is online 24/7 to fit your busy schedule and handle emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick a Time</h4>
+                    <p>Select the day and time for your service and get instant, affordable pricing.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                    <h4>Book Instantly</h4>
+                    <p>We'll confirm your appointment and take care of payment electronically and securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Your Pro Arrives</h4>
+                    <p>An experienced, fully-equipped professional will show up on time at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="wifi-tips py-80 bg-white">
+    <div class="wrap text-center">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4">A Sparkle You Can Trust: Pro Cleaning Tips</h2>
+                
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● High-Touch Point Sanitization</h5>
+                    <p class="small text-muted">Standard cleaning isn't just about floors. Our pros focus on "high-touch" areas like doorknobs, light switches, and remote controls to eliminate bacteria and viruses.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Cross-Contamination Prevention</h5>
+                    <p class="small text-muted">We use a color-coded microfiber system. This ensures that the cloth used to clean the bathroom never touches your kitchen surfaces, maintaining the highest hygiene standards.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Dusting from Top to Bottom</h5>
+                    <p class="small text-muted">The professional way to clean is gravity-led. We start with ceiling fans and high shelves so that any falling dust is captured when we finally vacuum and mop the floors.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Eco-Friendly Solutions</h5>
+                    <p class="small text-muted">Hard chemicals can damage your lungs and surfaces. Upon request, our pros can use non-toxic, pet-safe cleaning agents that leave your home smelling fresh without the fumes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="coverage-section py-80 bg-grey">
+    <div class="wrap text-center">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Top Footer -->
+
+<footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="#">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="home_cleaning.html">Standard Home Cleaning </a>            </div>
+        </div>
+    </footer>
+
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+function toggleSpecificAreas() {
+    const scope = document.getElementById('cleanScope').value;
+    const checklist = document.getElementById('specificAreaChecklist');
+    checklist.style.display = (scope === 'specific') ? 'block' : 'none';
+}
+
+document.getElementById('handyResidentialForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    let baseTotal = 0;
+    let addOnTotal = 0;
+    const scope = document.getElementById('cleanScope').value;
+    const homeSize = document.querySelector('input[name="rooms"]:checked').value;
+    
+    // Bedroom Multiplier
+    const multipliers = { studio: 1.0, medium: 1.6, large: 2.4 };
+    const currentMultiplier = multipliers[homeSize];
+
+    // 1. Base Logic
+    if (scope === 'standard') {
+        baseTotal = 12000;
+    } else if (scope === 'deep') {
+        baseTotal = 22000;
+    } else {
+        const selectedAreas = document.querySelectorAll('input[name="area"]:checked');
+        const areaRates = { kitchen: 5000, bathroom: 4000, patio: 6000, trash: 2000 };
+        selectedAreas.forEach(a => baseTotal += areaRates[a.value]);
+    }
+
+    // 2. Add-ons & Upholstery Logic
+    const selectedExtras = document.querySelectorAll('input[name="extra"]:checked');
+    const extraRates = {
+        fridge: 3000,
+        oven: 3500,
+        laundry: 8000,
+        sofa: 12000, // Machine-led extraction
+        carpet: 10000 // Machine-led extraction
+    };
+    selectedExtras.forEach(ex => addOnTotal += extraRates[ex.value]);
+
+    // 3. Final Calculation
+    const finalTotal = (baseTotal + addOnTotal) * currentMultiplier;
+
+    document.getElementById('priceOutput').innerHTML = `
+        <div class="calculated-price mt-3 p-3 border-success border rounded bg-light">
+            <small class="text-uppercase fw-bold text-muted" style="letter-spacing:1px">Estimated Total</small>
+            <h2 class="text-success">₦${Math.round(finalTotal).toLocaleString()}</h2>
+            <p class="small italic">Rate adjusted for ${homeSize === 'large' ? '4+ Bedroom Duplex' : 'standard property size'}.</p>
+            <button class="btn-success-full w-100 mt-2" onclick="location.href='https://app.handy.com'">Book via App</button>
+        </div>
+    `;
+});
+</script>
+</body>
+</html>

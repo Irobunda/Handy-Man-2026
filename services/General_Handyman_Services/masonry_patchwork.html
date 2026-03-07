@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minor Masonry & Patchwork | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-handy-banner">
+        <div class="wrap hero-split">
+            <div class="hero-text-content">
+                <h1>Minor Masonry & Wall Patching</h1>
+                <div class="rating-strip">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">The Experts in "Making Good"</span>
+                </div>
+                <p class="lead-text">
+                    Don't let ugly holes and cracked tiles ruin your home's finish. Whether you've just had plumbing work done, need to fill old AC drill holes, or want to replace a few broken floor tiles, our masonry experts specialize in seamless repairs that blend perfectly with your existing walls and floors.
+                </p>
+                <ul class="benefit-list">
+                    <li>✓ <strong>Plumbing/Electrical Patching</strong>: We close the holes other pros leave behind.</li>
+                    <li>✓ <strong>Tile Replacement</strong>: Specialized removal and replacement of cracked tiles.</li>
+                    <li>✓ <strong>Precision Plastering</strong>: Smooth, screeded finishes ready for paint.</li>
+                    <li>✓ <strong>Clean Operation</strong>: We manage dust and debris so your home stays livable.</li>
+                </ul>
+            </div>
+
+            <aside class="quote-form-card shadow-lg border-primary">
+                <div class="form-header">
+                    <h2>Get a Patchwork Quote</h2>
+                    <p>Tell us what needs fixing.</p>
+                </div>
+                
+                <form id="handyMasonryForm">
+                    <div class="form-group">
+                        <label>Repair Type</label>
+                        <select id="masonryScope" required>
+                            <option value="" disabled selected>Choose one...</option>
+                            <option value="wall_patch">Wall Hole Patching (After Plumbing/Electrical)</option>
+                            <option value="tile_fix">Cracked Tile Replacement</option>
+                            <option value="rendering">Minor Rendering / Plastering</option>
+                            <option value="skirting">Skirting Board / Floor Edge Repair</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Repair Intensity</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="intensity" value="light" checked> Light (Drill holes/Nails)</label>
+                            <label><input type="radio" name="intensity" value="heavy"> Heavy (Pipe chasing/Broken blocks)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Number of Areas</label>
+                        <input type="number" id="areaCount" min="1" value="1" required>
+                    </div>
+
+                <div class="form-group">
+                    <label>Street Address & Landmark</label>
+                    <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+                    <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+                </div>
+
+                    <button type="submit" class="btn-primary-block">See Estimated Price</button>
+                </form>
+                
+                <div id="priceOutput"></div>
+                <p class="app-disclaimer-text">
+                    <strong>Note:</strong> Estimates help you plan. To officially book and secure your pro, 
+                    <strong>please finish the booking in the Handy App</strong>.
+                </p>
+                
+            </aside>
+        </div>
+    </section>
+
+    <section class="trust-features">
+        <div class="wrap">
+            <h2 class="section-title">Why The Community Trusts Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h4>Experienced</h4>
+                    <p>Plumbers on our platform have years of experience fixing common and uncommon plumbing issues.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Reliable</h4>
+                    <p>There are few things worse than waiting. We match you with pros who show up on time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Flexible</h4>
+                    <p>Our team is online 24/7 to fit your busy schedule and handle emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick a Time</h4>
+                    <p>Select the day and time for your service and get instant, affordable pricing.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                    <h4>Book Instantly</h4>
+                    <p>We'll confirm your appointment and take care of payment electronically and securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Your Pro Arrives</h4>
+                    <p>An experienced, fully-equipped professional will show up on time at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="masonry-tips py-80 bg-white border-top">
+        <div class="wrap text-center">
+            <div class="row align-items-center text-start">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Seamless Repairs: Pro Masonry Tips</h2>
+                    
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● The "Bonding" Secret</h5>
+                        <p class="small text-muted">Plastering over old cement often leads to cracks. Our pros use a bonding agent (SBR) to ensure the new mortar sticks permanently to the old wall, preventing that annoying "hollow" sound later.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Preventing Shrinkage Cracks</h5>
+                        <p class="small text-muted">Applying thick plaster all at once leads to cracking as it dries. We apply masonry patches in layers—allowing the "scratch coat" to set before finishing with a smooth screeding putty.</p>
+                    </div>
+                    
+                    
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Matching Tile Grout</h5>
+                        <p class="small text-muted">When replacing a single tile, the grout color is the giveaway. We don't just use "white" or "grey"—we mix pigments to match the aged grout in the rest of your room for a truly invisible repair.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Dust Containment</h5>
+                        <p class="small text-muted">Masonry is dusty. We use wet-cutting techniques for tiles and plastic screening for wall repairs to ensure that cement dust doesn't settle on your electronics or furniture.</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+<section class="coverage-section bg-grey py-80">
+    <div class="wrap">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Top Footer -->
+
+<footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="../../index.html">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="masonry_patchwork.html">Masonry & Patchwwork</a>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+    <script>
+        document.getElementById('handyMasonryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const baseRates = { 
+                wall_patch: 7000, 
+                tile_fix: 10000, 
+                rendering: 15000, 
+                skirting: 5000 
+            };
+            
+            const intensityMultiplier = document.querySelector('input[name="intensity"]:checked').value === 'heavy' ? 1.5 : 1.0;
+            const count = document.getElementById('areaCount').value;
+            const scope = document.getElementById('masonryScope').value;
+            
+            const total = (baseRates[scope] * count) * intensityMultiplier;
+
+            document.getElementById('priceOutput').innerHTML = `
+                <div class="calculated-price mt-3 p-3 border-primary border rounded bg-light text-center">
+                    <small class="text-uppercase fw-bold text-muted d-block mb-1">Estimated Labor Fee</small>
+                    <h2 class="text-primary">₦${Math.round(total).toLocaleString()}</h2>
+                    <p class="small text-muted">Rate adjusted for ${count} area(s). Cost of cement, sand, or replacement tiles is provided by the client.</p>
+                    <button class="btn-success-full w-100 mt-2" onclick="location.href='https://app.handy.com/post_job.php?category=General Handyman&service=Masonry Patchwork'">
+                        Book Mason on App
+                    </button>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>

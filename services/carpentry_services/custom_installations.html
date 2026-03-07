@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen & Wardrobe Installation | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-carpenter-banner bg-white">
+        <div class="wrap hero-split">
+            <div class="hero-text-content">
+                <h1>Kitchen & Wardrobe Installation</h1>
+                <div class="rating-strip">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">Master Craftsmen for Your Custom Spaces</span>
+                </div>
+                <p class="lead-text">
+                    Upgrade your home with precision-fitted cabinetry. From modern high-gloss kitchen islands to custom floor-to-ceiling wardrobes, our master carpenters ensure perfect alignment, durable finishes, and optimized storage for your Nigerian home.
+                </p>
+                <ul class="benefit-list">
+                    <li>✓ <strong>Custom Fit</strong>: Tailored to your room’s specific dimensions.</li>
+                    <li>✓ <strong>Modern Hardware</strong>: Specialized in soft-close and hydraulic fittings.</li>
+                    <li>✓ <strong>Durable Materials</strong>: Expert handling of HDF, MDF, and Solid Wood.</li>
+                    <li>✓ <strong>Precision Leveling</strong>: No more crooked doors or uneven drawers.</li>
+                </ul>
+            </div>
+
+            <aside class="quote-form-card shadow-lg border-success">
+                <div class="form-header">
+                    <h2>Custom Woodwork Quote</h2>
+                    <p>Tell us about your installation project.</p>
+                </div>
+                
+                <form id="handyCustomInstallForm">
+                    <div class="form-group">
+                        <label>What are we installing?</label>
+                        <select id="jobType" required>
+                            <option value="" disabled selected>Choose one...</option>
+                            <option value="kitchen_full">Full Kitchen Cabinet Installation</option>
+                            <option value="wardrobe_full">Full Wardrobe Installation</option>
+                            <option value="cabinet_mod">Cabinet/Wardrobe Modification</option>
+                            <option value="pantry">Pantry or Shelving Setup</option>
+                            <option value="island">Kitchen Island Construction</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Material</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="material" value="hdf" checked> HDF/MDF (High Gloss/Matte)</label>
+                            <label><input type="radio" name="material" value="wood"> Solid Hardwood</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Project Scale</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="scale" value="small" checked> Small (1-2 Units)</label>
+                            <label><input type="radio" name="scale" value="medium"> Medium (Full Room)</label>
+                            <label><input type="radio" name="scale" value="large"> Large (Multi-room/Duplex)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Street Address & Landmark</label>
+                        <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+                        <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+                    </div>
+
+                    <button type="submit" class="btn-primary-block">See Estimated Labor Cost</button>
+                </form>
+                
+                <div id="priceOutput"></div>
+                
+                <p class="app-disclaimer-text">
+                    <strong>Note:</strong> Estimates cover labor only. Materials (wood, hinges, handles) are provided by the client or billed separately.
+                </p>
+            </aside>
+        </div>
+    </section>
+
+    <section class="trust-features py-80 bg-white border-top">
+        <div class="wrap text-center">
+            <h2 class="section-title">Why the Community Trusts Our Craftsmen</h2>
+            <div class="feature-grid mt-4">
+                <div class="feature-item">
+                    <div class="icon">📐</div>
+                    <h4>Laser Precision</h4>
+                    <p>We use modern leveling tools to ensure every cabinet is perfectly flush, even if your floors aren't.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Termite Treated</h4>
+                    <p>Every custom installation includes a complimentary anti-termite base treatment for long-term protection.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">✨</div>
+                    <h4>Premium Finishing</h4>
+                    <p>From edge-banding to seamless joints, we prioritize the aesthetic details that make your home shine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Schedule Visit</h4>
+                    <p>Book a pro for precise measurements and a detailed material list.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">🪚</div>
+                    <h4>Expert Crafting</h4>
+                    <p>Our carpenters handle the cutting, joining, and assembly with master skill.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Flawless Finish</h4>
+                    <p>We install, level, and clean up, leaving your new space ready for use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carpentry-tips py-80 bg-white">
+        <div class="wrap text-center">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Craftsmanship Excellence: Pro Installation Tips</h2>
+                    
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Seasonal Swelling & Shrinkage</h5>
+                        <p class="small text-muted">Nigeria's humidity causes wood to expand and shrink between seasons. Our pros don't just fit doors; we leave precise "expansion gaps" and seal raw edges to prevent warping.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Anti-Termite Structural Treatment</h5>
+                        <p class="small text-muted">Pests can ruin expensive cabinetry in months. We apply industrial-grade treatment to the back-panels and base of all wardrobes and kitchen units during installation.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Hinge & Runner Reinforcement</h5>
+                        <p class="small text-muted">Kitchen and wardrobe doors often fail at the hinges. We use heavy-duty hydraulic hinges and soft-close runners that distribute weight better, preventing the "sagging" common in local builds.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Load-Bearing Integrity</h5>
+                        <p class="small text-muted">A heavy kitchen island or overhead cabinet needs secure anchoring. We use reinforced wall plugs and bracket systems to ensure your storage stays safely in place.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+   
+<section class="coverage-section bg-grey py-80">
+    <div class="wrap">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Top Footer -->
+
+    <footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="../../index.html">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="custom_installations.html">Kitchen & Wardrobe Installation</a>
+            </div>
+        </div>
+    </footer>
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+
+    <script>
+        document.getElementById('handyCustomInstallForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Labor rates for specialized installation
+            const baseRates = {
+                kitchen_full: 45000,
+                wardrobe_full: 35000,
+                cabinet_mod: 15000,
+                pantry: 12000,
+                island: 25000
+            };
+            
+            // Multipliers for project scale
+            const scaleMultipliers = { small: 1.0, medium: 2.2, large: 4.5 };
+            
+            // Hardwood requires more labor and specialized blades
+            const materialMultiplier = document.querySelector('input[name="material"]:checked').value === 'wood' ? 1.4 : 1.0;
+            
+            const job = document.getElementById('jobType').value;
+            const scale = document.querySelector('input[name="scale"]:checked').value;
+            
+            const total = (baseRates[job] * scaleMultipliers[scale]) * materialMultiplier;
+
+            document.getElementById('priceOutput').innerHTML = `
+                <div class="calculated-price mt-3 p-3 border-success border rounded bg-light text-center">
+                    <small class="text-uppercase fw-bold text-muted d-block mb-1">Estimated Labor Fee</small>
+                    <h2 class="text-success">₦${Math.round(total).toLocaleString()}</h2>
+                    <p class="small text-muted mb-2">Final price may vary after site inspection and measurements.</p>
+                    <button class="btn-success-full w-100" onclick="location.href='https://app.handy.com'">Book a Master Carpenter</button>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>

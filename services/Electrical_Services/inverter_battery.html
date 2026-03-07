@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverter & Battery Systems | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-electric-banner">
+        <div class="wrap hero-split">
+            <div class="hero-text-content">
+                <h1>Inverter & Battery Installation</h1>
+                <div class="rating-strip">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">482 Reviews in your area</span>
+                </div>
+                <p class="lead-text">
+               Power interruptions shouldn’t control your day. Handy works with certified technicians who design and service inverter and battery solutions that keep your space running smoothly. Whether it’s a fresh installation, battery upgrade, or system troubleshooting, every setup is handled with care, safety, and efficiency—built for dependable everyday use. 
+            </p>
+                
+                <ul class="benefit-list">
+                    <li>✓ <strong>Handyman-Approved Pros</strong>: Background-checked and verified.</li>
+                    <li>✓ <strong>24/7 Support</strong>: Friendly customer service whenever you need it.</li>
+                    <li>✓ <strong>Happiness Guarantee</strong>: We stand behind every job.</li>
+                    <li>✓ <strong>Upfront Pricing</strong>: No hidden fees, ever.</li>
+                </ul>
+            </div>
+
+            <aside class="quote-form-card">
+                <div class="form-header">
+                    <h2>Get a Price Estimate</h2>
+                    <p>Tell us a bit about the job to see your rate.</p>
+                </div>
+                
+                <form id="handyInverterForm">
+                    <div class="form-group">
+                        <label>What is the issue with your system?</label>
+                        <select id="jobType" required>
+                            <option value="" disabled selected>Choose one...</option>
+                            <option value="backup">Short backup time (Batteries dying fast)</option>
+                            <option value="charge">Inverter not charging batteries</option>
+                            <option value="power">No output / System won't turn on</option>
+                            <option value="setup">New Inverter/Solar installation</option>
+                            <option value="water">Tubular battery water topping</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What type of batteries do you have?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="battery" value="dry" checked> Dry Cell / AGM (Maintenance Free)</label>
+                            <label><input type="radio" name="battery" value="tubular"> Tubular (Tall batteries with water caps)</label>
+                            <label><input type="radio" name="battery" value="lithium"> Lithium (Slim/Wall-mounted)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Snap a photo (Optional)</label>
+                        <input type="file" id="jobPhoto" accept="image/*" class="file-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Street Address & Landmark</label>
+                        <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+                        <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+                    </div>
+
+                    <button type="submit" class="btn-primary-block">See Estimated Price</button>
+                </form>
+                
+                <div id="priceOutput"></div>
+                
+                <p class="app-disclaimer-text">
+                    <strong>Note:</strong> Estimates help you plan. To officially book and secure your pro, 
+                    <strong>please finish the booking in the Handy App</strong>.
+                </p>
+            </aside>
+        </div>
+    </section>
+
+    <section class="trust-features">
+        <div class="wrap">
+            <h2 class="section-title">Why The Community Trusts Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h4>Experienced</h4>
+                    <p>Plumbers on our platform have years of experience fixing common and uncommon plumbing issues.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Reliable</h4>
+                    <p>There are few things worse than waiting. We match you with pros who show up on time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Flexible</h4>
+                    <p>Our team is online 24/7 to fit your busy schedule and handle emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick a Time</h4>
+                    <p>Select the day and time for your service and get instant, affordable pricing.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                    <h4>Book Instantly</h4>
+                    <p>We'll confirm your appointment and take care of payment electronically and securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Your Pro Arrives</h4>
+                    <p>An experienced, fully-equipped professional will show up on time at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="coverage-section py-80 bg-white">
+        <div class="wrap text-center">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4">Extend Your Power: Battery Health Tips</h2>
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Avoid Deep Discharge</h5>
+                    <p class="small text-muted">Try not to let your system drop below <strong>30% charge</strong>. Frequent "deep cycling" can permanently reduce the capacity of AGM and Tubular batteries.</p>
+                </div>
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Keep it Cool & Ventilated</h5>
+                    <p class="small text-muted">Ensure your inverter setup is in a well-ventilated area. Excessive heat during charging can cause battery plates to warp or casings to swell.</p>
+                </div>
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Use Only Distilled Water</h5>
+                    <p class="small text-muted">For Tubular batteries, only top up with <strong>distilled water</strong>. Using tap water introduces minerals that create chemical imbalances and destroy cells.</p>
+                </div>
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Terminal Maintenance</h5>
+                    <p class="small text-muted">Watch for white or blue crust (corrosion) on terminals. Keeping these clean ensures a steady, safe flow of power to your home.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="coverage-section  bg-grey py-80">
+    <div class="wrap">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Top Footer -->
+
+<footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="../../index.html">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="inverter_battery.html">Inverter and Battery Systems</a>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+
+        <script>
+            document.getElementById('handyInverterForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Pricing specific to Inverter & Battery Systems
+                const baseRates = { 
+                    backup: 15000, // Testing and health check
+                    charge: 12000, // Fuse/circuit board repair
+                    power: 10000,  // Basic troubleshooting
+                    setup: 35000,  // Full installation
+                    water: 5000    // Simple maintenance
+                };
+
+                const batteryType = document.querySelector('input[name="battery"]:checked').value;
+                // Lithium requires advanced programming/balancing; Tubular involves chemical handling
+                const batteryMultipliers = { dry: 1.0, tubular: 1.2, lithium: 1.6 };
+                
+                const job = document.getElementById('jobType').value;
+                const total = baseRates[job] * batteryMultipliers[batteryType];
+                
+                document.getElementById('priceOutput').innerHTML = `
+                    <div class="calculated-price">
+                        <small>Estimated Professional Fee</small>
+                        <h3>₦${total.toLocaleString()}</h3>
+                        <button class="btn-success-full" onclick="window.location.href='https://app.handy.com/post_job.php'">
+                            Continue to App to Book
+                        </button>
+                    </div>
+                `;
+});
+    </script>
+</body>
+</html>

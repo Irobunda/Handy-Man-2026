@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtain & Blind Installation | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-handy-banner">
+        <div class="wrap hero-split">
+            <div class="hero-text-content">
+                <h1>Professional Curtain & Blind Installation</h1>
+                <div class="rating-strip">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">Precision Window Styling for 800+ Homes</span>
+                </div>
+                <p class="lead-text">
+                    Transform your windows with flawlessly hung treatments. Whether you’re installing heavy blackout curtains, modern Zebra blinds, or motorized rollers, our technicians use specialized hammer drills to tackle tough concrete lintels, ensuring your rails are secure and perfectly level.
+                </p>
+                <ul class="benefit-list">
+                    <li>✓ <strong>Heavy-Duty Drilling</strong>: Specialized bits for concrete and stone lintels.</li>
+                    <li>✓ <strong>All Styles</strong>: Experts in Zebra, Venetian, Roman, and Eyelet styles.</li>
+                    <li>✓ <strong>Perfect Alignment</strong>: Laser-leveled for a symmetrical, high-end look.</li>
+                    <li>✓ <strong>Secure Mounting</strong>: We use reinforced plugs to prevent rails from sagging.</li>
+                </ul>
+            </div>
+
+ <aside class="quote-form-card shadow-lg border-primary">
+    <div class="form-header">
+        <h2>Get a Window Quote</h2>
+        <p>Select your window count and treatment type.</p>
+    </div>
+
+    <form id="handyCurtainForm">
+        <div class="form-group">
+            <label>What are we installing?</label>
+            <select id="itemType" required>
+                <option value="" disabled selected>Choose one...</option>
+                <option value="curtain_rail">Curtain Rails / Rods</option>
+                <option value="zebra">Zebra / Roller Blinds</option>
+                <option value="venetian">Venetian / Wooden Blinds</option>
+                <option value="roman">Roman Shades</option>
+                <option value="motorized">Motorized / Smart Blinds</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Number of Windows</label>
+            <input type="number" id="windowCount" min="1" value="1" required>
+        </div>
+
+        <div class="form-group">
+            <label>Do you have window measurements?</label>
+            <select id="hasMeasurements" onchange="toggleMeasurementFields()">
+                <option value="no">No, just give me a rough estimate</option>
+                <option value="yes">Yes, I have the dimensions</option>
+            </select>
+        </div>
+
+        <div id="measurementInputs" style="display:none;" class="p-3 bg-light rounded border mb-3">
+            <div class="form-group">
+                <label class="small fw-bold">Unit of Measure</label>
+                <div class="radio-group d-flex gap-10">
+                    <label><input type="radio" name="unit" value="cm" checked> CM</label>
+                    <label><input type="radio" name="unit" value="mm"> MM</label>
+                    <label><input type="radio" name="unit" value="inches"> Inches</label>
+                </div>
+            </div>
+            <div class="row d-flex gap-10">
+                <div class="col">
+                    <label class="small">Width</label>
+                    <input type="number" id="windowWidth" placeholder="0.0" class="w-100">
+                </div>
+                <div class="col">
+                    <label class="small">Drop (Height)</label>
+                    <input type="number" id="windowDrop" placeholder="0.0" class="w-100">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Wall Condition</label>
+            <div class="radio-group">
+                <label><input type="radio" name="wallType" value="standard" checked> Standard Plaster</label>
+                <label><input type="radio" name="wallType" value="hard"> Hard Concrete Lintel</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Street Address & Landmark</label>
+            <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+            <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+        </div>
+
+        <button type="submit" class="btn-primary-block">See Estimated Price</button>
+    </form>
+
+    <div id="priceOutput"></div>
+    <p class="app-disclaimer-text">
+        <strong>Note:</strong> Estimates help you plan. To officially book and secure your pro, 
+        <strong>please finish the booking in the Handy App</strong>.
+    </p>
+</aside>
+        </div>
+    </section>
+
+    <section class="trust-features">
+        <div class="wrap">
+            <h2 class="section-title">Why The Community Trusts Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h4>Experienced</h4>
+                    <p>Plumbers on our platform have years of experience fixing common and uncommon plumbing issues.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Reliable</h4>
+                    <p>There are few things worse than waiting. We match you with pros who show up on time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Flexible</h4>
+                    <p>Our team is online 24/7 to fit your busy schedule and handle emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick a Time</h4>
+                    <p>Select the day and time for your service and get instant, affordable pricing.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                    <h4>Book Instantly</h4>
+                    <p>We'll confirm your appointment and take care of payment electronically and securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Your Pro Arrives</h4>
+                    <p>An experienced, fully-equipped professional will show up on time at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="curtain-tips py-80 bg-white border-top">
+    <div class="wrap text-center">
+        <div class="row align-items-center text-start">
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4">The Perfect Hang: Pro Window Tips</h2>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Steps for a Perfect Fit</h5>
+                    <div class="small text-muted">
+                        
+                        <ul class="ps-3 mb-0">
+                            <p><strong>Width:</strong> Measure the top, middle, and bottom of the window frame. Use the widest for curtains and the narrowest for inside-mount blinds.</p>
+                            <p><strong>Drop (Height):</strong> Measure from your desired rail position down to the end point (sill or floor).</p>
+                            <p><strong>Clearance:</strong> Ensure at least 2 inches of flat wall space above the window for the concrete lintel brackets.</p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● "High and Wide" Rule</h5>
+                    <p class="small text-muted">To make your room feel taller, we install rods 4-6 inches above the frame and extend them 3-6 inches beyond the sides. This creates a grand, luxurious aesthetic.</p>
+                    
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Dealing with Concrete Lintels</h5>
+                    <p class="small text-muted">Nigerian windows often have reinforced concrete beams above them. We use SDS rotary hammer drills to ensure a deep, secure anchor without cracking your plaster.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Bracket Spacing for Heavy Fabrics</h5>
+                    <p class="small text-muted">Heavy blackout curtains can weigh over 10kg. We install center support brackets for any span over 4 feet to prevent the rod from bowing or pulling out.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Blind Safety & Tension</h5>
+                    <p class="small text-muted">For Zebra blinds, we mount tension pulleys securely. This prevents tangling and ensures the blind rolls up straight every time.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="coverage-section bg-grey py-80">
+    <div class="wrap">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Top Footer -->
+
+<footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="../../index.html">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="Curtain_blind.html">Curtain & Blind Installation</a>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+    <script>
+      function toggleMeasurementFields() {
+    const hasMeasure = document.getElementById('hasMeasurements').value;
+    const div = document.getElementById('measurementInputs');
+    div.style.display = (hasMeasure === 'yes') ? 'block' : 'none';
+}
+
+document.getElementById('handyCurtainForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const baseRates = { 
+        curtain_rail: 4000, 
+        zebra: 6000, 
+        venetian: 6500, 
+        roman: 5500, 
+        motorized: 12000 
+    };
+    
+    const itemType = document.getElementById('itemType').value;
+    const count = parseInt(document.getElementById('windowCount').value);
+    const hasMeasure = document.getElementById('hasMeasurements').value;
+    
+    let total = baseRates[itemType] * count;
+
+    // Surcharge Logic for Large Windows
+    if (hasMeasure === 'yes') {
+        const width = parseFloat(document.getElementById('windowWidth').value) || 0;
+        const unit = document.querySelector('input[name="unit"]:checked').value;
+        
+        let widthInCm = width;
+        if (unit === 'mm') widthInCm = width / 10;
+        if (unit === 'inches') widthInCm = width * 2.54;
+
+        if (widthInCm > 240) {
+            total *= 1.5; // 50% increase for extra-wide windows
+        }
+    }
+
+    const wallMultiplier = document.querySelector('input[name="wallType"]:checked').value === 'hard' ? 1.25 : 1.0;
+    const finalTotal = total * wallMultiplier;
+
+    document.getElementById('priceOutput').innerHTML = `
+        <div class="calculated-price mt-3 p-3 border-primary border rounded bg-light text-center">
+            <small class="text-uppercase fw-bold text-muted d-block mb-1">Estimated Installation Fee</small>
+            <h2 class="text-primary">₦${Math.round(finalTotal).toLocaleString()}</h2>
+            ${widthInCm > 240 ? '<p class="small text-danger fw-bold">Large Window Surcharge Applied</p>' : ''}
+            <button class="btn-success-full w-100 mt-2" onclick="location.href='https://app.handy.com'">Book on App</button>
+        </div>
+    `;
+});
+    </script>
+</body>
+</html>

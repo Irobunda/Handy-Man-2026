@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surge Protection & Installation Services | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-electric-banner">
+        <div class="wrap hero-split">
+            <div class="hero-text-content">
+                <h1>Surge Protection Services</h1>
+                <div class="rating-strip">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">482 Reviews in your area</span>
+                </div>
+                <p class="lead-text">
+                Power surges can damage appliances and sensitive electronics in seconds. Handy connects you with professionals who install and service surge protection systems designed to safeguard your home or business. From assessing risk points to proper installation and grounding, we focus on reliable protection that helps extend the life of your electrical systems and equipment.
+            </p>
+                
+                <ul class="benefit-list">
+                    <li>✓ <strong>Handyman-Approved Pros</strong>: Background-checked and verified.</li>
+                    <li>✓ <strong>24/7 Support</strong>: Friendly customer service whenever you need it.</li>
+                    <li>✓ <strong>Happiness Guarantee</strong>: We stand behind every job.</li>
+                    <li>✓ <strong>Upfront Pricing</strong>: No hidden fees, ever.</li>
+                </ul>
+            </div>
+
+            <aside class="quote-form-card">
+                <div class="form-header">
+                    <h2>Get a Price Estimate</h2>
+                    <p>Tell us a bit about the job to see your rate.</p>
+                </div>
+                
+            <form id="handySurgeProtectionForm">
+                <div class="form-group">
+                    <label>What level of protection do you need?</label>
+                    <select id="jobType" required>
+                        <option value="" disabled selected>Choose one...</option>
+                        <option value="whole_house">Whole-House Surge Protector (Installed at DB Box)</option>
+                        <option value="appliance">Point-of-Use Protection (ACs, Fridges, TVs)</option>
+                        <option value="voltage">Voltage Stabilizer/Regulator Installation</option>
+                        <option value="lightning">Lightning Arrestor System</option>
+                        <option value="audit">Electrical Audit (Check for grounding/earthing issues)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>What is your current power phase?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="phase" value="single" checked> Single Phase (Standard residential)</label>
+                        <label><input type="radio" name="phase" value="three"> Three Phase (Large homes/Commercial)</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Street Address & Landmark</label>
+                    <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+                    <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+                </div>
+
+                <button type="submit" class="btn-primary-block">See Estimated Price</button>
+            </form>
+                
+                <div id="priceOutput"></div>
+                
+                <p class="app-disclaimer-text">
+                    <strong>Note:</strong> Estimates help you plan. To officially book and secure your pro, 
+                    <strong>please finish the booking in the Handy App</strong>.
+                </p>
+            </aside>
+        </div>
+    </section>
+
+    <section class="trust-features">
+        <div class="wrap">
+            <h2 class="section-title">Why The Community Trusts Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h4>Experienced</h4>
+                    <p>Plumbers on our platform have years of experience fixing common and uncommon plumbing issues.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Reliable</h4>
+                    <p>There are few things worse than waiting. We match you with pros who show up on time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Flexible</h4>
+                    <p>Our team is online 24/7 to fit your busy schedule and handle emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick a Time</h4>
+                    <p>Select the day and time for your service and get instant, affordable pricing.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                    <h4>Book Instantly</h4>
+                    <p>We'll confirm your appointment and take care of payment electronically and securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Your Pro Arrives</h4>
+                    <p>An experienced, fully-equipped professional will show up on time at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="surge-tips py-80 bg-white">
+    <div class="wrap text-center">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4">Safeguard Your Home: Surge Protection & Earthing</h2>
+                
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● The "First Line" Defense</h5>
+                    <p class="small text-muted">A Whole-House Surge Protector (Type 2 SPD) installed at your main DB box stops high-voltage spikes from the grid before they reach your internal sockets.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Grounding is Mandatory</h5>
+                    <p class="small text-muted">Surge protectors work by "shunting" excess electricity into the ground. If your home's earthing is weak or non-existent, the surge protector cannot protect your devices.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Protection for Sensitive Boards</h5>
+                    <p class="small text-muted">Modern Inverter ACs and Smart TVs have delicate motherboards. Standard stabilizers often react too slowly; an SPD provides the nanosecond response time needed.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Monitor Your SPD Status</h5>
+                    <p class="small text-muted">Most surge protectors have a green "Protection On" light. If this light turns red or goes out, the device has sacrificed itself to stop a surge and must be replaced immediately.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="coverage-section bg-grey py-80">
+    <div class="wrap">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Top Footer -->
+
+<footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="../../index.html">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="surge_protection.html">Surge Protection</a>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+
+        <script>
+        document.getElementById('handySurgeProtectionForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Pricing specific to Surge Protection
+    const baseRates = { 
+        whole_house: 15000, // Labor for DB Box installation
+        appliance: 5000,    // Individual unit setup
+        voltage: 8000,      // Stabilizer wiring
+        lightning: 25000,   // Complex earthing work
+        audit: 10000        // Full system health check
+    };
+
+    const phaseType = document.querySelector('input[name="phase"]:checked').value;
+    // Three-phase systems are significantly more complex to balance and protect
+    const phaseMultipliers = { single: 1.0, three: 2.2 };
+    
+    const job = document.getElementById('jobType').value;
+    const total = baseRates[job] * phaseMultipliers[phaseType];
+    
+    document.getElementById('priceOutput').innerHTML = `
+        <div class="calculated-price">
+            <small>Estimated Professional Fee</small>
+            <h3>₦${total.toLocaleString()}</h3>
+            <button class="btn-success-full" onclick="window.location.href='https://app.handy.com/post_job.php'">
+                Continue to App to Book
+            </button>
+        </div>
+    `;
+});
+    </script>
+</body>
+</html>

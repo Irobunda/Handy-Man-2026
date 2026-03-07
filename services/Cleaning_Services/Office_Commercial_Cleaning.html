@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office & Commercial Cleaning | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-cleaning-banner bg-white">
+        <div class="wrap hero-split">
+            <div class="hero-text-content">
+                <h1>Professional Office & Commercial Cleaning</h1>
+                <div class="rating-strip">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">Corporate Partner for 200+ Businesses</span>
+                </div>
+                <p class="lead-text">
+                    Maintain a productive, healthy, and professional workspace. Our B2B cleaning solutions combine high-standard maintenance with medical-grade disinfection, ensuring your team stays safe and your office stays sharp.
+                </p>
+                <ul class="benefit-list">
+                    <li>✓ <strong>Flexible Scheduling</strong>: After-hours or weekend shifts to avoid disruption.</li>
+                    <li>✓ <strong>Disinfection Focused</strong>: EPA-approved sanitization for high-touch surfaces.</li>
+                    <li>✓ <strong>Vetted Professionals</strong>: Reliable, uniformed staff trained for corporate environments.</li>
+                    <li>✓ <strong>Automated Invoicing</strong>: Seamless payment and documentation for your accounts.</li>
+                </ul>
+            </div>
+
+            <aside class="quote-form-card shadow-lg border-primary">
+                <div class="form-header">
+                    <h2>Request a Business Quote</h2>
+                    <p>Tailored cleaning for your workspace.</p>
+                </div>
+                
+                <form id="handyCommercialForm">
+                    <div class="form-group">
+                        <label>Service Type</label>
+                        <select id="jobType" required>
+                            <option value="routine" selected>Routine Maintenance (Weekly/Monthly)</option>
+                            <option value="one_off">One-Off Deep Clean & Disinfection</option>
+                            <option value="event">Post-Event / Conference Cleanup</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Office Size (Staff Count / Desks)</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="officeSize" value="small" checked> Small (1-10 Desks)</label>
+                            <label><input type="radio" name="officeSize" value="medium"> Medium (11-50 Desks)</label>
+                            <label><input type="radio" name="officeSize" value="large"> Large (50+ Desks / Multi-floor)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Shift</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="shift" value="day"> During Work Hours</label>
+                            <label><input type="radio" name="shift" value="night" checked> After Hours / Weekend</label>
+                        </div>
+                    </div>
+
+
+                <div class="form-group">
+                    <label>Street Address & Landmark</label>
+                    <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+                    <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+                </div>
+
+                    <button type="submit" class="btn-primary-block">Generate Business Estimate</button>
+                </form>
+                
+                <div id="priceOutput"></div>
+
+                <p class="app-disclaimer-text">
+                    <strong>Note:</strong> Estimates help you plan. To officially book and secure your pro, 
+                    <strong>please finish the booking in the Handy App</strong>.
+                </p>
+            </aside>
+        </div>
+    </section>
+
+    <section class="trust-features py-80 bg-white">
+        <div class="wrap">
+            <h2 class="section-title text-center">Why Businesses Trust Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏢</div>
+                    <h4>Corporate Standards</h4>
+                    <p>Our teams are trained to follow strict corporate protocols, ensuring your documents and privacy are respected.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Insured & Vetted</h4>
+                    <p>Every commercial cleaner is background-checked and covered by our platform's safety guarantee.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Scale-Ready</h4>
+                    <p>From single-room startups to multi-story bank headquarters, we have the manpower to scale with you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works for Business</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick your Shift</h4>
+                    <p>Choose day-cleaning or discreet after-hours service to minimize office disruption.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                       <h4>Manage Online</h4>
+                    <p>Book recurring services and manage your corporate invoices through our dashboard.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">🧤</div>
+                    <h4>Certified Clean</h4>
+                    <p>Our pros arrive with industrial-grade sanitizers and a professional, uniformed appearance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="office-tips py-80 bg-white">
+        <div class="wrap text-center">
+            <div class="row align-items-center text-start">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Workspace Wellness: Professional Standards</h2>
+                    
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● High-Touch Point Disinfection</h5>
+                        <p class="small text-muted">We focus on the areas that spread germs fastest: elevator buttons, shared printer panels, and door pulls, using medical-grade sanitizers.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Keyboard & Tech Sanitization</h5>
+                        <p class="small text-muted">We use non-moisture alcohol-based wipes to clean keyboards, mice, and desk phones without damaging sensitive electronics.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Restroom & Breakroom Hygiene</h5>
+                        <p class="small text-muted">We ensure common areas are chemically sanitized to prevent cross-contamination and maintain employee health.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Discreet "Stealth" Cleaning</h5>
+                        <p class="small text-muted">Our teams are trained to operate with minimal noise. Documents and equipment are respected and left undisturbed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="coverage-section py-80 bg-grey">
+        <div class="wrap">
+            <h2 class="section-title text-center">Our Nationwide Coverage</h2>
+            <p class="text-center text-muted mb-5">Handy provides corporate cleaning services across all major Nigerian business hubs.</p>
+            <div class="coverage-container">
+                <div class="city-box">
+                    <ul class="city-list">
+                        <li>▶ Lagos (Ikoyi, VI, Ikeja)</li>
+                        <li>▶ Abuja (CBD, Maitama)</li>
+                        <li>▶ Port Harcourt</li>
+                        <li>▶ Ibadan</li>
+                    </ul>
+                    <ul class="city-list">
+                        <li>▶ Benin City</li>
+                        <li>▶ Kano</li>
+                        <li>▶ Enugu</li>
+                        <li>▶ and more!</li>
+                    </ul>
+                </div>
+                <div class="map-box">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="../../index.html">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="Office_Commercial_Cleaning.html">Office & Commercial Cleaning</a>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-cols">
+                <div>
+                    <h4>Handyman</h4>
+                    <a href="../../faq.html">Help</a>
+                    <a href="../../faq.html">Contact Us</a>
+                </div>
+                <div>
+                    <h4>Popular Services</h4>
+                    <a href="../../service.html#cleaning">Cleaning</a>
+                    <a href="../../service.html#plumbing">Plumbing</a>
+                    <a href="../../service.html#electrical">Electrical</a>
+                </div>
+                <div>
+                    <h4>For Pros</h4>
+                    <a href="https://app.handy.com/signup.php">Join as a Pro</a>
+                </div>
+                <div>
+                    <h4>Get the App</h4>
+                    <div class="footer-stores">
+                        <img src="../../images/appstore-badge.svg" alt="App Store" width="120">
+                        <img src="../../images/googleplay-badge.svg" alt="Google Play" width="120">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copy">© 2026 Handyman</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('handyCommercialForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const baseRates = {
+                routine: 25000,
+                one_off: 40000,
+                event: 35000
+            };
+            
+            const sizeMultipliers = { small: 1.0, medium: 2.5, large: 5.0 };
+            const shiftMultiplier = document.querySelector('input[name="shift"]:checked').value === 'night' ? 1.2 : 1.0;
+            const job = document.getElementById('jobType').value;
+            const size = document.querySelector('input[name="officeSize"]:checked').value;
+            
+            const total = (baseRates[job] * sizeMultipliers[size]) * shiftMultiplier;
+
+            document.getElementById('priceOutput').innerHTML = `
+                <div class="calculated-price mt-3 p-3 border-dark border rounded bg-light text-center">
+                    <small class="text-uppercase fw-bold text-muted d-block mb-1">Estimated Corporate Fee</small>
+                    <h2 class="text-dark">₦${Math.round(total).toLocaleString()}</h2>
+                    <p class="small text-muted mb-2">Pricing for corporate facility maintenance.</p>
+                    <button class="btn-success-full w-100" onclick="location.href='https://app.handy.com'">Book on Handy App</button>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Painting & Touch-ups | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-handy-banner">
+        <div class="wrap hero-split">
+            <div class="hero-text-content">
+                <h1>Professional Wall Painting & Touch-ups</h1>
+                <div class="rating-strip">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">Expert Finishing for Modern Interiors</span>
+                </div>
+                <p class="lead-text">
+                    Give your walls a fresh, flawless finish. Whether you need to cover scuff marks from a move, repair a damp patch, or create a bold accent wall, our painters provide clean, professional results with zero mess. We specialize in precision edging and perfect color matching.
+                </p>
+                <ul class="benefit-list">
+                    <li>✓ <strong>Seamless Touch-ups</strong>: We blend new paint perfectly with existing colors.</li>
+                    <li>✓ <strong>Surface Prep</strong>: Expert sanding and "screeding" for a glass-smooth finish.</li>
+                    <li>✓ <strong>Damp Treatment</strong>: We fix peeling paint at the root with anti-damp solutions.</li>
+                    <li>✓ <strong>Furniture Protection</strong>: We mask and cover everything—no drips, no spills.</li>
+                </ul>
+            </div>
+
+            <aside class="quote-form-card shadow-lg border-primary">
+                <div class="form-header">
+                    <h2>Get a Painting Quote</h2>
+                    <p>Tell us the scale of your refresh.</p>
+                </div>
+                
+                <form id="handyPaintingForm">
+                    <div class="form-group">
+                        <label>Service Scope</label>
+                        <select id="paintScope" required>
+                            <option value="" disabled selected>Choose one...</option>
+                            <option value="touch_up">Minor Touch-ups (Scuffs/Holes)</option>
+                            <option value="accent">Single Accent Wall</option>
+                            <option value="room">Full Room Repaint</option>
+                            <option value="damp">Damp Patch Repair & Paint</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Wall Condition</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="condition" value="smooth" checked> Smooth (Screeded)</label>
+                            <label><input type="radio" name="condition" value="rough"> Rough / Textured</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Number of Rooms / Areas</label>
+                        <input type="number" id="areaCount" min="1" value="1" required>
+                    </div>
+
+
+                <div class="form-group">
+                    <label>Street Address & Landmark</label>
+                    <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+                    <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+                </div>
+                    <button type="submit" class="btn-primary-block">See Estimated Price</button>
+                </form>
+                
+                <div id="priceOutput"></div>
+                        <p class="app-disclaimer-text">
+                    <strong>Note:</strong> Estimates help you plan. To officially book and secure your pro, 
+                    <strong>please finish the booking in the Handy App</strong>.
+                </p>
+            </aside>
+        </div>
+    </section>
+
+    <section class="trust-features">
+        <div class="wrap">
+            <h2 class="section-title">Why The Community Trusts Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h4>Experienced</h4>
+                    <p>Plumbers on our platform have years of experience fixing common and uncommon plumbing issues.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Reliable</h4>
+                    <p>There are few things worse than waiting. We match you with pros who show up on time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Flexible</h4>
+                    <p>Our team is online 24/7 to fit your busy schedule and handle emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick a Time</h4>
+                    <p>Select the day and time for your service and get instant, affordable pricing.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                    <h4>Book Instantly</h4>
+                    <p>We'll confirm your appointment and take care of payment electronically and securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Your Pro Arrives</h4>
+                    <p>An experienced, fully-equipped professional will show up on time at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="painting-tips py-80 bg-white border-top">
+        <div class="wrap text-center">
+            <div class="row align-items-center text-start">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">The Perfect Finish: Pro Painting Tips</h2>
+                    
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● The Secret is in the "Screeding"</h5>
+                        <p class="small text-muted">A paint job is only as good as the wall underneath. For a premium Nigerian finish, we apply a thin layer of screeding putty and sand it to a mirror-smooth surface before the first drop of paint hits the wall.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Matching Aged Paint</h5>
+                        <p class="small text-muted">Paint changes color slightly as it ages. For touch-ups, our pros don't just use the original bucket; we "feather" the edges and blend the new paint into the old to ensure the repair is invisible.</p>
+                    </div>
+                    
+                    
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Dealing with Rising Damp</h5>
+                        <p class="small text-muted">Painting over a damp patch is a temporary fix. We identify if it's "rising damp," apply a waterproof cement-based primer, and then paint. This ensures the finish won't peel again in 3 months.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Cutting-In vs. Masking Tape</h5>
+                        <p class="small text-muted">While amateur painters rely on tape, our pros use "cutting-in" techniques with angled brushes for razor-sharp lines where the wall meets the ceiling or skirting boards.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<section class="coverage-section bg-grey py-80">
+    <div class="wrap">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Top Footer -->
+
+<footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="../../index.html">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="painting.html">Wall Painting & Touch-ups</a>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+    <script>
+        document.getElementById('handyPaintingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const baseRates = { 
+                touch_up: 5000, 
+                accent: 12000, 
+                room: 25000, 
+                damp: 18000 
+            };
+            
+            const conditionMultiplier = document.querySelector('input[name="condition"]:checked').value === 'rough' ? 1.3 : 1.0;
+            const count = document.getElementById('areaCount').value;
+            const scope = document.getElementById('paintScope').value;
+            
+            const total = (baseRates[scope] * count) * conditionMultiplier;
+
+            document.getElementById('priceOutput').innerHTML = `
+                <div class="calculated-price mt-3 p-3 border-primary border rounded bg-light text-center">
+                    <small class="text-uppercase fw-bold text-muted d-block mb-1">Estimated Labor Fee</small>
+                    <h2 class="text-primary">₦${Math.round(total).toLocaleString()}</h2>
+                    <p class="small text-muted">Rate adjusted for ${count} area(s). Paint costs are billed separately based on brand choice (Dulux, Meyer, etc.).</p>
+                    <button class="btn-success-full w-100 mt-2" onclick="location.href='https://app.handy.com/post_job.php?category=General Handyman&service=Wall Painting'">
+                        Book Painter on App
+                    </button>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>

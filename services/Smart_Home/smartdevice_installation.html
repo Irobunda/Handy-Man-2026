@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Device Installation | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-smart-banner">
+        <div class="wrap hero-split">
+            <div class="hero-text-content">
+                <h1>Smart Device Installation & Repair Services</h1>
+                <div class="rating-strip">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">482 Reviews in your area</span>
+                </div>
+                <p class="lead-text">
+Upgrade your home or office with the latest in smart device technology. Whether you're installing a smart thermostat, smart lighting, or voice-controlled systems, we provide expert installation services to ensure seamless integration into your daily life.
+
+Our technicians can install, configure, and optimize smart home devices like doorbell cameras, smart speakers, smart TVs, lighting systems, and more, ensuring they work smoothly with your existing network and devices.
+                <ul class="benefit-list">
+                    <li>✓ <strong>Handyman-Approved Pros</strong>: Background-checked and verified.</li>
+                    <li>✓ <strong>24/7 Support</strong>: Friendly customer service whenever you need it.</li>
+                    <li>✓ <strong>Happiness Guarantee</strong>: We stand behind every job.</li>
+                    <li>✓ <strong>Upfront Pricing</strong>: No hidden fees, ever.</li>
+                </ul>
+            </div>
+
+            <aside class="quote-form-card">
+                <div class="form-header">
+                    <h2>Get a Price Estimate</h2>
+                    <p>Tell us a bit about the job to see your rate.</p>
+                </div>
+                
+               <form id="handySmartDeviceForm">
+                    <div class="form-group">
+                        <label>What smart device do you need help with?</label>
+                        <select id="jobType" required>
+                            <option value="" disabled selected>Choose one...</option>
+                            <option value="hub">Smart Hub Setup (Alexa, Google Home, Apple HomeKit)</option>
+                            <option value="lock">Smart Door Lock Installation</option>
+                            <option value="thermostat">Smart Thermostat / AC Controller</option>
+                            <option value="switch">Smart Switches & Dimmer Setup</option>
+                            <option value="sensor">Smart Sensors (Motion, Leak, or Smoke)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>What is your primary Smart Home Ecosystem?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="ecosystem" value="google" checked> Google Home / Assistant</label>
+                            <label><input type="radio" name="ecosystem" value="alexa"> Amazon Alexa</label>
+                            <label><input type="radio" name="ecosystem" value="apple"> Apple HomeKit</label>
+                            <label><input type="radio" name="ecosystem" value="none"> I don't have one yet</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Street Address & Landmark</label>
+                        <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+                        <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+                    </div>
+
+                    <button type="submit" class="btn-primary-block">See Estimated Price</button>
+                </form>
+                                
+                <div id="priceOutput"></div>
+                
+                <p class="app-disclaimer-text">
+                    <strong>Note:</strong> Estimates help you plan. To officially book and secure your pro, 
+                    <strong>please finish the booking in the Handy App</strong>.
+                </p>
+            </aside>
+        </div>
+    </section>
+
+    <section class="trust-features">
+        <div class="wrap">
+            <h2 class="section-title">Why The Community Trusts Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h4>Experienced</h4>
+                    <p>Plumbers on our platform have years of experience fixing common and uncommon plumbing issues.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Reliable</h4>
+                    <p>There are few things worse than waiting. We match you with pros who show up on time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Flexible</h4>
+                    <p>Our team is online 24/7 to fit your busy schedule and handle emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick a Time</h4>
+                    <p>Select the day and time for your service and get instant, affordable pricing.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                    <h4>Book Instantly</h4>
+                    <p>We'll confirm your appointment and take care of payment electronically and securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Your Pro Arrives</h4>
+                    <p>An experienced, fully-equipped professional will show up on time at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="smart-tips py-80 bg-white">
+        <div class="wrap text-center">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Smart Living: Professional Device Setup</h2>
+                    
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Ecosystem Compatibility</h5>
+                        <p class="small text-muted">Not all devices play well together. Our pros ensure your new gadget is fully compatible with your existing hub (Alexa, Google, or Apple) for seamless voice control.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Secure WiFi Configuration</h5>
+                        <p class="small text-muted">Smart devices are common entry points for hackers. We set up your devices on a secure, isolated network layer to keep your personal data and home privacy protected.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Neutral Wire Verification</h5>
+                        <p class="small text-muted">Most smart switches require a "Neutral" wire to function. Before we start, our pros verify your home's wiring to ensure a safe and compatible installation.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Automation & Scene Setup</h5>
+                        <p class="small text-muted">Don't just turn it on; automate it. We can help you set up "Scenes"—like automatically turning off lights and locking doors when you leave the house.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="coverage-section py-80 bg-grey">
+    <div class="wrap">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Top Footer -->
+
+<footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="#">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="smartdevice_installation.html">Smart Device Installation & Repair Services</a>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+
+<script>document.getElementById('handySmartDeviceForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Pricing specific to Smart Device Installation
+    const baseRates = { 
+        hub: 5000,      // Basic networking & app setup
+        lock: 12000,    // Physical door drilling/mounting
+        thermostat: 8000, // Wiring to AC/Heater
+        switch: 7000,   // Electrical wiring work
+        sensor: 4000     // Simple mounting & pairing
+    };
+
+    const ecosystemType = document.querySelector('input[name="ecosystem"]:checked').value;
+    // Apple HomeKit often requires more strict hardware compatibility checks
+    const ecosystemMultipliers = { google: 1.0, alexa: 1.0, apple: 1.3, none: 1.0 };
+    
+    const job = document.getElementById('jobType').value;
+    const total = baseRates[job] * ecosystemMultipliers[ecosystemType];
+    
+    document.getElementById('priceOutput').innerHTML = `
+        <div class="calculated-price">
+            <small>Estimated Professional Fee</small>
+            <h3>₦${total.toLocaleString()}</h3>
+            <button class="btn-success-full" onclick="window.location.href='https://app.handy.com/post_job.php'">
+                Continue to App to Book
+            </button>
+        </div>
+    `;
+});
+</script>
+</body>
+</html>

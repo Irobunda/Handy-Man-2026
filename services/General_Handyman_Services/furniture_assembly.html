@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Furniture Assembly | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-handy-banner">
+        <div class="wrap hero-split">
+            <div class="hero-text-content">
+                <h1>Furniture Assembly Made Easy</h1>
+                <div class="rating-strip">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">Expert Assembly for 500+ Furniture Brands</span>
+                </div>
+                <p class="lead-text">
+                    Skip the instruction manual headache. Whether it's a multi-door wardrobe, an ergonomic office chair, or a complex kitchen island, our pros arrive with the right tools to assemble your furniture perfectly, securely, and without the leftover screws.
+                </p>
+                <ul class="benefit-list">
+                    <li>✓ <strong>Brand Experts</strong>: Specialized in IKEA, Jumia, and imported flat-packs.</li>
+                    <li>✓ <strong>Structural Integrity</strong>: We ensure every joint is tightened and leveled.</li>
+                    <li>✓ <strong>Wall Anchoring</strong>: Safety first—we anchor tall units to prevent tipping.</li>
+                    <li>✓ <strong>Fast Turnaround</strong>: Professional speed without sacrificing quality.</li>
+                </ul>
+            </div>
+
+            <aside class="quote-form-card shadow-lg border-primary">
+                <div class="form-header">
+                    <h2>Get an Assembly Quote</h2>
+                    <p>Select the item type to see your rate.</p>
+                </div>
+                
+                <form id="handyAssemblyForm">
+                    <div class="form-group">
+                        <label>What are we building?</label>
+                        <select id="itemType" required>
+                            <option value="" disabled selected>Choose one...</option>
+                            <option value="bed">Bed Frame (Single/Double/King)</option>
+                            <option value="wardrobe">Wardrobe (2-4 Doors)</option>
+                            <option value="desk">Office Desk / Gaming Setup</option>
+                            <option value="dining">Dining Set (Table & Chairs)</option>
+                            <label><option value="sofa">Sectional Sofa / Couch</option></label>
+                            <option value="fitness">Home Gym / Fitness Equipment</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Complexity Level</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="complexity" value="simple" checked> Simple (Few parts)</label>
+                            <label><input type="radio" name="complexity" value="complex"> Complex (Drawers/Mirrors/LEDs)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Total Number of Items</label>
+                        <input type="number" id="itemCount" min="1" value="1" required>
+                    </div>
+
+                <div class="form-group">
+                    <label>Street Address & Landmark</label>
+                    <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+                    <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+                </div>
+
+                    <button type="submit" class="btn-primary-block">See Estimated Price</button>
+                </form>
+                
+                <div id="priceOutput"></div>
+                  <p class="app-disclaimer-text">
+                    <strong>Note:</strong> Estimates help you plan. To officially book and secure your pro, 
+                    <strong>please finish the booking in the Handy App</strong>.
+                </p>              
+            </aside>
+        </div>
+    </section>
+
+    <section class="trust-features">
+        <div class="wrap">
+            <h2 class="section-title">Why The Community Trusts Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h4>Experienced</h4>
+                    <p>Plumbers on our platform have years of experience fixing common and uncommon plumbing issues.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Reliable</h4>
+                    <p>There are few things worse than waiting. We match you with pros who show up on time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Flexible</h4>
+                    <p>Our team is online 24/7 to fit your busy schedule and handle emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick a Time</h4>
+                    <p>Select the day and time for your service and get instant, affordable pricing.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                    <h4>Book Instantly</h4>
+                    <p>We'll confirm your appointment and take care of payment electronically and securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Your Pro Arrives</h4>
+                    <p>An experienced, fully-equipped professional will show up on time at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="assembly-tips py-80 bg-white">
+        <div class="wrap text-center">
+            <div class="row align-items-center text-start">
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4">Precision Building: Pro Assembly Tips</h2>
+                    
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Squaring the Frame</h5>
+                        <p class="small text-muted">A wardrobe that isn't "square" will have doors that don't close right. We use corner levels to ensure the frame is 100% vertical before the back panel is nailed on.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Drawer Runner Alignment</h5>
+                        <p class="small text-muted">The #1 fail in DIY assembly is backward or uneven drawer runners. Our pros identify the "Left" and "Right" tracks immediately, ensuring a smooth, soft-close glide every time.</p>
+                    </div>
+                    
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Cam-Lock Security</h5>
+                        <p class="small text-muted">Over-tightening or under-tightening cam-locks causes flat-pack furniture to wobble or collapse. We use precision torque to lock panels together permanently without stripping the wood.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Child-Safety Wall Anchoring</h5>
+                        <p class="small text-muted">In homes with children, tall dressers and wardrobes are tipping hazards. We provide and install anti-tip brackets to secure your furniture to the wall for total peace of mind.</p>
+                    </div>
+                </div>
+                
+
+<section class="coverage-section bg-grey py-80">
+    <div class="wrap">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Top Footer -->
+
+<footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="../../index.html">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="furniture_assembly.html">Furniture Assembly </a>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('handyAssemblyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const baseRates = { 
+                bed: 10000, 
+                wardrobe: 18000, 
+                desk: 7000, 
+                dining: 12000, 
+                sofa: 8000, 
+                fitness: 15000 
+            };
+            
+            const complexityMultiplier = document.querySelector('input[name="complexity"]:checked').value === 'complex' ? 1.4 : 1.0;
+            const count = document.getElementById('itemCount').value;
+            const itemType = document.getElementById('itemType').value;
+            
+            const total = (baseRates[itemType] * count) * complexityMultiplier;
+
+            document.getElementById('priceOutput').innerHTML = `
+                <div class="calculated-price mt-3 p-3 border-primary border rounded bg-light">
+                    <small class="text-uppercase fw-bold text-muted">Estimated Assembly Fee</small>
+                    <h2 class="text-primary">₦${Math.round(total).toLocaleString()}</h2>
+                    <p class="small text-muted">Rate includes basic wall anchoring for tall units.</p>
+                    <button class="btn-success-full w-100 mt-2" onclick="location.href='https://app.handy.com/post_job.php?category=General Handyman&service=Furniture Assembly'">
+                        Book Assembly on App
+                    </button>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>

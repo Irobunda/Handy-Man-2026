@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roof Framework & Structural Woodwork | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+    <section class="service-carpenter-banner bg-white">
+        <div class="wrap hero-split">
+            <div class="hero-text-content">
+                <h1>Roof Framework & Structural Woodwork</h1>
+                <div class="rating-strip">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">Specialized Structural Engineering Pros</span>
+                </div>
+                <p class="lead-text">
+                    The safety of your home starts with a solid foundation above your head. From replacing rot-damaged rafters to installing full roof trusses and ceiling noggings, our structural carpenters ensure your home is storm-proof, pest-resistant, and built to last.
+                </p>
+                <ul class="benefit-list">
+                    <li>✓ <strong>Storm-Ready Trusses</strong>: Reinforced bracing for high-wind resistance.</li>
+                    <li>✓ <strong>Wood-Rot Repair</strong>: Expert replacement of water-damaged timber.</li>
+                    <li>✓ <strong>Pest Immunization</strong>: Industrial anti-termite treatment on all wood.</li>
+                    <li>✓ <strong>Ceiling Framework</strong>: Precise noggings for P.O.P or PVC installations.</li>
+                </ul>
+            </div>
+
+            <aside class="quote-form-card shadow-lg border-danger">
+                <div class="form-header">
+                    <h2>Structural Project Estimate</h2>
+                    <p>Tell us about your roofing or framing needs.</p>
+                </div>
+                
+                <form id="handyStructuralForm">
+                    <div class="form-group">
+                        <label>What structural service is required?</label>
+                        <select id="jobType" required>
+                            <option value="" disabled selected>Choose one...</option>
+                            <option value="roof_repair">Roof Framework Repair (Partial replacement)</option>
+                            <option value="full_truss">Full Roof Truss Installation</option>
+                            <option value="ceiling_frame">Ceiling Nogging Setup (P.O.P Support)</option>
+                            <option value="fascia">Fascia Board Installation/Repair</option>
+                            <option value="termite">Structural Termite Damage Restoration</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Type of Wood Required</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="woodType" value="hardwood" checked> Hardwood (Opepe/Mahogany)</label>
+                            <label><input type="radio" name="woodType" value="softwood"> Softwood/Untreated</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Project Scale</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="scale" value="minor" checked> Minor Fix (Single Area)</label>
+                            <label><input type="radio" name="scale" value="medium"> Medium (Half Roof/Floor)</label>
+                            <label><input type="radio" name="scale" value="large"> Major (Full Building)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Street Address & Landmark</label>
+                        <input type="text" id="address" placeholder="e.g., Agungi, Lekki-Epe Expressway" required class="mb-2">
+                        <input type="text" id="landmark" placeholder="Closest Landmark" required>
+                    </div>
+
+                    <button type="submit" class="btn-primary-block">Get Structural Labor Estimate</button>
+                </form>
+                
+                <div id="priceOutput"></div>
+            </aside>
+        </div>
+    </section>
+
+   <section class="trust-features">
+        <div class="wrap">
+            <h2 class="section-title">Why The Community Trusts Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h4>Experienced</h4>
+                    <p>Plumbers on our platform have years of experience fixing common and uncommon plumbing issues.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Reliable</h4>
+                    <p>There are few things worse than waiting. We match you with pros who show up on time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Flexible</h4>
+                    <p>Our team is online 24/7 to fit your busy schedule and handle emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick a Time</h4>
+                    <p>Select the day and time for your service and get instant, affordable pricing.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                    <h4>Book Instantly</h4>
+                    <p>We'll confirm your appointment and take care of payment electronically and securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Your Pro Arrives</h4>
+                    <p>An experienced, fully-equipped professional will show up on time at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carpentry-tips py-80 bg-white border-top">
+        <div class="wrap">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-start">
+                    <h2 class="fw-bold mb-4">Structural Integrity: The Handy Standard</h2>
+                    
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Rafter Spacing & Load Distribution</h5>
+                        <p class="small text-muted">Proper roofing requires precise rafter spacing (usually 600mm) to support the weight of stone-coated tiles or long-span aluminum. We ensure weight is distributed to the load-bearing walls, not the ceiling.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Anti-Termite Immersion</h5>
+                        <p class="small text-muted">Structural wood in Nigeria faces aggressive pest threats. Our pros apply high-concentration anti-termite chemicals to every joint and beam before installation to prevent internal wood-rot.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● The Danger of "Soggy" Noggings</h5>
+                        <p class="small text-muted">If your ceiling looks like it's sagging, the wooden noggings are likely compromised by water. We replace water-logged wood with treated timber to prevent P.O.P collapse.</p>
+                    </div>
+
+                    <div class="tip-box mb-3">
+                        <h5 class="fw-bold text-success">● Storm Bracing</h5>
+                        <p class="small text-muted">During the rainy season, wind uplift can pull a roof off. We install additional "hurricane ties" and cross-bracing to secure your trusses to the concrete ring beam of the house.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="coverage-section py-80 bg-grey">
+    <div class="wrap text-center">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="../../index.html">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="roof_framework.html">Roof Framework & Structural Woodwork</a>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+
+    <script>
+        document.getElementById('handyStructuralForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Base labor rates for structural carpentry
+            const baseRates = {
+                roof_repair: 35000,
+                full_truss: 120000,
+                ceiling_frame: 20000,
+                fascia: 15000,
+                termite: 25000
+            };
+            
+            // Project scale multipliers
+            const scaleMultipliers = { minor: 1.0, medium: 2.8, large: 6.5 };
+            
+            // Hardwood (Opepe/Mahogany) is much harder to work with than softwood
+            const woodMultiplier = document.querySelector('input[name="woodType"]:checked').value === 'hardwood' ? 1.25 : 1.0;
+            
+            const job = document.getElementById('jobType').value;
+            const scale = document.querySelector('input[name="scale"]:checked').value;
+            
+            const total = (baseRates[job] * scaleMultipliers[scale]) * woodMultiplier;
+
+            document.getElementById('priceOutput').innerHTML = `
+                <div class="calculated-price mt-3 p-3 border-danger border rounded bg-light text-center">
+                    <small class="text-uppercase fw-bold text-muted d-block mb-1">Estimated Labor Fee</small>
+                    <h2 class="text-danger">₦${Math.round(total).toLocaleString()}</h2>
+                    <p class="small text-muted mb-2">Estimate excludes cost of timber, nails, and chemical treatments.</p>
+                    <button class="btn-primary-block w-100" onclick="location.href='https://app.handy.com'">Book Structural Inspection</button>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>

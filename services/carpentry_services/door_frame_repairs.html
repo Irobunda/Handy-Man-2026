@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door & Lock Repair Services | Handyman Nigeria</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="bg-light">
+
+    <header class="main-header">
+        <div class="logo"><a href="../../index.html">Handyman</a></div>
+        <nav class="nav-links">
+            <a href="../../service.html">Services</a>
+      <a class="nav-cta" href="public/post_job.php">Post a Job</a>
+            <a href="#">Log in</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+
+<section class="service-carpenter-banner bg-white">
+    <div class="wrap hero-split">
+        <div class="hero-text-content">
+            <h1>Door & Lock Repair Services</h1>
+            <div class="rating-strip">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">Trusted Security Experts in Your City</span>
+            </div>
+            <p class="lead-text">
+                Secure your home with professional door and lock maintenance. From fixing sagging hinges and jammed frames to installing high-security smart locks, our verified pros ensure your entry points are safe, smooth, and functional.
+            </p>
+            <ul class="benefit-list">
+                <li>✓ <strong>Emergency Ready</strong>: Swift response for lockouts or broken keys.</li>
+                <li>✓ <strong>Smart Lock Pros</strong>: Experts in digital and biometric installations.</li>
+                <li>✓ <strong>Structural Fixes</strong>: Realignment of sagging or warped door frames.</li>
+                <li>✓ <strong>Upfront Estimates</strong>: Transparent pricing for parts and labor.</li>
+            </ul>
+        </div>
+
+        <aside class="quote-form-card shadow-lg border-primary">
+            <div class="form-header">
+                <h2>Secure Your Home</h2>
+                <p>Tell us what's wrong to see an estimate.</p>
+            </div>
+            
+            <form id="handyLockRepairForm">
+                <div class="form-group">
+                    <label>What is the primary issue?</label>
+                    <select id="jobType" required>
+                        <option value="" disabled selected>Choose one...</option>
+                        <option value="lock_repair">Lock Repair (Jammed or hard to turn)</option>
+                        <option value="lock_install">New Lock Installation / Upgrade</option>
+                        <option value="door_align">Door Alignment (Sagging or won't close)</option>
+                        <option value="handle">Handle or Hinge Replacement</option>
+                        <option value="smart_lock">Smart/Biometric Lock Setup</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Door Material</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="material" value="wood" checked> Wood / MDF</label>
+                        <label><input type="radio" name="material" value="metal"> Steel / Security Door</label>
+                        <label><input type="radio" name="material" value="glass"> Glass / Aluminum</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>How many doors need attention?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="count" value="1" checked> 1 Door</label>
+                        <label><input type="radio" name="count" value="2"> 2-3 Doors</label>
+                        <label><input type="radio" name="count" value="4"> 4+ Doors</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label>Street Address & Landmark</label>
+                    <input type="text" id="address" placeholder="e.g., 12 Allen Avenue, Ikeja" required class="mb-2">
+                    <input type="text" id="landmark" placeholder="Closest Landmark (e.g., Near GTBank)" required>
+                </div>
+
+                <button type="submit" class="btn-primary-block">See Estimated Price</button>
+            </form>
+                
+                <div id="priceOutput"></div>
+                
+                <p class="app-disclaimer-text">
+                    <strong>Note:</strong> Estimates help you plan. To officially book and secure your pro, 
+                    <strong>please finish the booking in the Handy App</strong>.
+                </p>
+            </aside>
+        </div>
+    </section>
+
+    <section class="trust-features">
+        <div class="wrap">
+            <h2 class="section-title">Why The Community Trusts Handyman</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h4>Experienced</h4>
+                    <p>Plumbers on our platform have years of experience fixing common and uncommon plumbing issues.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Reliable</h4>
+                    <p>There are few things worse than waiting. We match you with pros who show up on time.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h4>Flexible</h4>
+                    <p>Our team is online 24/7 to fit your busy schedule and handle emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="how-it-works bg-grey py-80">
+        <div class="wrap text-center">
+            <h2 class="section-title">How Handy Works</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-icon">📅</div>
+                    <h4>Pick a Time</h4>
+                    <p>Select the day and time for your service and get instant, affordable pricing.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">📱</div>
+                    <h4>Book Instantly</h4>
+                    <p>We'll confirm your appointment and take care of payment electronically and securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-icon">👷</div>
+                    <h4>Your Pro Arrives</h4>
+                    <p>An experienced, fully-equipped professional will show up on time at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<section class="carpentry-tips py-80 bg-white">
+    <div class="wrap text-center">
+        <div class="row align-items-center text-start">
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4">Woodcraft Excellence: Pro Maintenance Tips</h2>
+                
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Seasonal Swelling & Shrinkage</h5>
+                    <p class="small text-muted">Nigeria's humidity causes wood to expand in the rainy season and shrink during the Harmattan. Our pros don't just shave jammed doors; we seal raw edges with moisture-resistant lacquer to prevent future warping.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Anti-Termite Structural Treatment</h5>
+                    <p class="small text-muted">Pests can ruin a roof framework in months. We apply industrial-grade anti-termite treatment to all rafters, noggings, and skirting boards during repairs to ensure your structural wood stays solid for decades.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Hinge & Runner Reinforcement</h5>
+                    <p class="small text-muted">Kitchen and wardrobe doors often fail at the hinges. We use heavy-duty hydraulic hinges and soft-close runners that distribute weight better, preventing the "sagging" common in HDF and MDF furniture.</p>
+                </div>
+
+                <div class="tip-box mb-3">
+                    <h5 class="fw-bold text-success">● Roof Framework Integrity</h5>
+                    <p class="small text-muted">A small roof leak can rot your entire ceiling frame. During repairs, we inspect the load-bearing timber for soft spots, replacing weakened sections before they lead to a dangerous ceiling collapse.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="coverage-section py-80 bg-grey">
+    <div class="wrap">
+        <h2 class="section-title text-center">Where Does Handy Operate?</h2>
+        <p class="text-center text-muted mb-5">Handy operates in hundreds of cities around Nigeria. No matter where you live, Handy has you covered.</p>
+        
+        <div class="coverage-container">
+            <div class="city-box">
+                <ul class="city-list">
+                    <li>▶ Lagos</li>
+                    <li>▶ Abuja</li>
+                    <li>▶ Port Harcourt</li>
+                    <li>▶ Ibadan</li>
+                </ul>
+                <ul class="city-list">
+                    <li>▶ Benin City</li>
+                    <li>▶ Kano</li>
+                    <li>▶ Enugu</li>
+                    <li>and hundreds more!</li>
+                </ul>
+            </div>
+
+            <div class="map-box">
+                <div class="nigeria-svg-map">
+                    <img src="../../images/nigeria-coverage-map.png" alt="Coverage Map" class="responsive-map">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Top Footer -->
+
+<footer class="main-footer py-40 bg-dark text-white">
+        <div class="wrap">
+            <div class="footer-links d-flex gap-20 small">
+                <a href="#">🏠 Home</a> > <a href="../../service.html">Services</a> > <a href="door_frame_repairs.html">Door Frame Repairs</a>
+    </footer>
+
+  <!-- Footer -->  
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cols">
+        <div>
+          <h4>Handyman</h4>
+          <a href="../../faq.html">Help</a>
+          <a href="../../faq.html">Contact Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div>
+          <h4>Popular Services</h4>
+          <a href="service.html#cleaning-services">Cleaning</a>
+          <a href="service.html#general-handyman-services">Handyman</a>
+          <a href="service.html#plumbing-services">Plumbing</a>
+          <a href="service.html#electrical_services">Electrical</a>
+          <a href="../../service.html">See all services</a>
+        </div>
+
+        <div>
+          <h4>For Pros</h4>
+          <a href="https://app.handy.com/signup.php">Sign up as a Tradesperson</a>
+          <a href="#">Requirements</a>
+          <a href="#">Partner with Handyman</a>
+        </div>
+
+        <div>
+          <h4>Get the App</h4>
+          <div class="footer-stores">
+          <a href="#" aria-label="Download on the App Store" class="store-link">
+            <img src="../../images/appstore-badge.svg" alt="Download on the App Store">
+          </a>
+
+          <a href="#" aria-label="Get it on Google Play" class="store-link">
+            <img src="../../images/googleplay-badge.svg" alt="Get it on Google Play">
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-copy">© 2026 Handyman</div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+    document.getElementById('handyLockRepairForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Base labor rates per door
+    const baseRates = {
+        lock_repair: 6000,
+        lock_install: 8000,
+        door_align: 7000,
+        handle: 4000,
+        smart_lock: 15000 // Higher technical requirement
+    };
+    
+    // Material Complexity Multiplier
+    const materialMultipliers = { wood: 1.0, metal: 1.6, glass: 1.3 };
+    
+    // Door Count Multiplier (Discount for bulk)
+    const countMultipliers = { "1": 1.0, "2": 1.8, "4": 3.2 };
+    
+    const job = document.getElementById('jobType').value;
+    const material = document.querySelector('input[name="material"]:checked').value;
+    const count = document.querySelector('input[name="count"]:checked').value;
+    
+    const total = (baseRates[job] * materialMultipliers[material]) * countMultipliers[count];
+
+    document.getElementById('priceOutput').innerHTML = `
+        <div class="calculated-price mt-3 p-3 border-dark border rounded bg-light text-center">
+            <small class="text-uppercase fw-bold text-muted d-block mb-1">Estimated Labor Fee</small>
+            <h2 class="text-dark">₦${Math.round(total).toLocaleString()}</h2>
+            <p class="small text-muted mb-2">Parts (Locks, Handles) are charged separately based on choice.</p>
+            <button class="btn-success-full w-100" onclick="location.href='https://app.handy.com'">Complete Booking on App</button>
+        </div>
+    `;
+});
+</script>
+</body>
+</html>
