@@ -30,12 +30,12 @@
             <aside class="category-sidebar">
                 <h3>All Categories</h3>
                 <ul>
-                    <li><a href="#plumbing" onclick="scrollToSection('plumbing')">Plumbing</a></li>
-                    <li><a href="#electrical" onclick="scrollToSection('electrical')">Electrical & Power</a></li>
-                    <li><a href="#cleaning" onclick="scrollToSection('cleaning')">Cleaning</a></li>
-                    <li><a href="#automation" onclick="scrollToSection('automation')">Security & Smart Home</a></li>
-                    <li><a href="#carpentry" onclick="scrollToSection('carpentry')">Carpentry</a></li>
-                    <li><a href="#general" onclick="scrollToSection('general')">General Handyman Services</a></li>
+                    <li><a href="#plumbing">Plumbing</a></li>
+                    <li><a href="#electrical">Electrical & Power</a></li>
+                    <li><a href="#cleaning">Cleaning</a></li>
+                    <li><a href="#automation">Security & Smart Home</a></li>
+                    <li><a href="#carpentry">Carpentry</a></li>
+                    <li><a href="#general">General Handyman Services</a></li>
                 </ul>
             </aside>
 
@@ -125,14 +125,5 @@
             </div>
         </div>
     </main>
-
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            const offset = 100; 
-            const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
-        }
-    </script>
 </body>
 </html>
