@@ -894,3 +894,11 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff; margin: 0; 
     line-height: 1.2;
 }
 
+/* -- Scrolling update---*/
+html {
+    scroll-behavior: smooth;
+}
+
+.service-group {
+    scroll-margin-top: 100px;
+}
