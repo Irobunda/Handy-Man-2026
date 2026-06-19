@@ -8,15 +8,14 @@
 </head>
 <body class="bg-light">
 
-    <header class="main-header">
-        <div class="logo"><a href="index.html" class="home-link">Handyman</a></div>
-        <nav class="nav-links">
-            <a href="service.html" class="active">Services</a>
-            <a class="nav-cta" href="public/post_job.php">Post a Job</a>
-            <a href="https://app.handy.com/login.php">Log in</a>
-            <a href="faq.html">FAQ</a>
-        </nav>
-    </header>
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('header').innerHTML = html;
+    });
+</script>
+
 
     <section class="service-hero">
         <div class="envelope text-center">
