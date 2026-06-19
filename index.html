@@ -28,7 +28,7 @@
         <div class="landing-services">
           <h2 class="section-title">Popular Services</h2>
           <div class="services-list">
-            <div class="hover" onmouseenter="showImage('img_plumber.jpg', this)" onclick="window.location.href='service.html#plumbing';">
+            <div class="hover" onmouseenter="showImage('.img_plumber.jpg', this)" onclick="window.location.href='service.html#plumbing';">
               <h3>Plumbing</h3>
               <p>Expert solutions for all your plumbing needs!</p>
             </div>
@@ -191,7 +191,7 @@ let activeService = document.querySelector('.landing-services .hover.active');
       const firstService = document.querySelector('.services-list div');
       if (firstService) {
           // Trigger the initial state based on the first item in the list
-          showImage('Img_handyman.jpg', 'Professional Plumbing Services', firstService);
+          showImage('img_handyman.jpg', 'Professional Plumbing Services', firstService);
       }
     });
   </script>
